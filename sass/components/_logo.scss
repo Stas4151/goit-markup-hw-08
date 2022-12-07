@@ -1,0 +1,31 @@
+.logo__first {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+
+    color: var(--second-color);
+
+    .logo__first:focus {
+        color: var(--second-color);
+    }
+}
+
+.logo__second {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+
+    color: var(--main-text-color);
+
+    &:focus {
+        color: var(--second-color);
+    }
+}
+
+.logo__first--footer {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+
+    color: var(--second-color);
+}
+
+.logo__second--footer {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+
+    color: var(--primary-site-color);
+}

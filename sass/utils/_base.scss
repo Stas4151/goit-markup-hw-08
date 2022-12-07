@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: var (var(--primary-site-color));
+    color: var(--main-text-color);
+
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}

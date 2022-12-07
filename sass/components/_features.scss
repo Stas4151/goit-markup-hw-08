@@ -1,0 +1,43 @@
+.section-features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: 0px;
+    margin-right: 0 px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.features h3 {
+    font-weight: 700;
+    line-height: 1.14;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features p {
+    color: var(--second-text-color);
+
+    line-height: 1.7;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.feature__title {
+    margin-bottom: 10px;
+}
+
+.feature__icon {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    align-items: center;
+    border-radius: 4px;
+
+    background-color: var(--team-color);
+}
