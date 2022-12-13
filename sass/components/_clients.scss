@@ -1,41 +1,64 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 96px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+    }
+  
 }
 
 .clients__title {
     margin-bottom: 50px;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.7;
+    @include font('Raleway', normal, 700, 24px, calc(33/28), 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        @include font('Raleway', normal, 700, 24px, calc(42/36), 0.03em);
+    }
 }
 
 .client {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+    flex-wrap:nowrap;
+    }
 }
 
 .client__goup {
     display: flex;
-    margin-right: 30px;
+    
+        &:hover,
+        &:focus {
+            border-color: var(--second-color);
+        }
 
-    &:last-child {
-    margin-right: 0;
-    }
+        @media screen and (min-width: 1200px) {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
 
-    &:hover,
-    &:focus {
-    border-color: var(--second-color);
-    }
+    width: calc((100% - 30px) / 2);
+    height: 90px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: calc((100% - 60px) / 3);
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 150px) / 6);
+        }
 }
 
 .client__card {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--links-color);
     border-radius: 4px;
@@ -49,4 +72,12 @@
         fill: var(--second-color);
         border: 1px solid var(--second-color);
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 226px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }   
 }

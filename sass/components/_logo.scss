@@ -1,31 +1,58 @@
+.logo-head {
+    display: flex;
+    margin-bottom: 26px;
+    
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 92px;
+    }
+}
+
 .logo__first {
-    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+    @include font('Raleway', normal, 700, 24px, calc(28/24), 0.03em);
 
     color: var(--second-color);
 
     .logo__first:focus {
         color: var(--second-color);
     }
+
+    @media screen and (min-width: 1200px) {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+    }
 }
 
 .logo__second {
-    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+    @include font('Raleway', normal, 700, 24px, calc(28/24), 0.03em);
 
     color: var(--main-text-color);
 
     &:focus {
         color: var(--second-color);
     }
+
+    @media screen and (min-width: 1200px) {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+    }
 }
 
 .logo__first--footer {
-    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+    @include font('Raleway', normal, 700, 24px, calc(28/24), 0.03em);
+        color: var(--second-color);
 
-    color: var(--second-color);
+    @media screen and (min-width: 1200px) {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+    }
 }
 
 .logo__second--footer {
-    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
-
+    @include font('Raleway', normal, 700, 24px, calc(28/24), 0.03em);
     color: var(--primary-site-color);
+
+    @media screen and (min-width: 1200px) {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+    }
 }

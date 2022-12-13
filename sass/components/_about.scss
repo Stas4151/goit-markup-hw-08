@@ -1,24 +1,29 @@
 .about {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+    display: block;
     margin-bottom: 94px;
+    }
 }
 
 .about__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.7;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.7;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        margin-bottom: 50px;
 }
 
 .about__list {
-    display: flex;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
 
-&:last-child(1) {
-    margin-right: 30px;
-    }
+    &:last-child(1) {
+        margin-right: 30px;
+        } 
 }
 
 .about__img {
