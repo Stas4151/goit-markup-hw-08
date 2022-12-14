@@ -8,6 +8,10 @@
         font-weight: 500;
         line-height: 1.14;
     }
+
+     @media screen and (min-width: 768px) {
+        gap: 50px;
+     }
 }
 
 .menu .list {
@@ -42,11 +46,10 @@
     }
 
     @media screen and (min-width: 1200px) {
-
     }
 }
 
-.link.current {
+.link .current {
     color: var(--second-color);
 }
 
@@ -73,8 +76,14 @@
     }
 
         @media screen and (min-width: 1200px) {
-            left: 0px;
-            top: 73px;
+            &::after {
+                content: "";
+                position: absolute;
+                
+            display: block;
+            left: 10px;
+            top: 61px;
+        }
         }
 }
 

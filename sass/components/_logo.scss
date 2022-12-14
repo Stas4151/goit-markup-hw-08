@@ -1,13 +1,15 @@
 .logo-head {
     display: flex;
-    margin-bottom: 26px;
     
     @media screen and (min-width: 768px) {
         margin-right: 87px;
+        padding-bottom: 26px;
+
     }
 
     @media screen and (min-width: 1200px) {
         margin-right: 92px;
+            padding-bottom: 0;
     }
 }
 
