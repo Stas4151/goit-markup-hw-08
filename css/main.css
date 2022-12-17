@@ -1159,7 +1159,7 @@ a {
   }
 }
 
-@media screen and (min-width: 480px), (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .logo-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1173,7 +1173,7 @@ a {
             flex-direction: column;
   }
 }
-@media screen and (min-width: 768px), (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .logo-footer {
     margin-left: 72px;
     margin-right: 165px;
@@ -1184,6 +1184,8 @@ a {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -1235,6 +1237,11 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-icons {
+    margin-bottom: 102px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-icons {
@@ -1373,9 +1380,18 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .footer-email {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1405,7 +1421,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .input-email {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     width: 358px;
   }
 }

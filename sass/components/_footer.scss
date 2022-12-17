@@ -13,19 +13,21 @@
 }
 
 .logo-footer {
-    @media screen and (min-width: 480px), (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
-    @media screen and (min-width: 768px), (max-width: 1199px)  {
+    @media screen and (min-width: 768px) {
         margin-left: 72px;
         margin-right: 165px;
         }
 
     @media screen and (min-width: 1200px) {
         align-items: baseline;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -74,6 +76,10 @@
     justify-content: center;
 
     margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 102px;
+    }
 
     @media screen and (min-width: 1200px) {
     margin-bottom: 0;
@@ -203,7 +209,10 @@
     }
 
     @media screen and (min-width: 1200px) {
-        align-items: baseline;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -229,7 +238,7 @@
     border-radius: 4px;
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 20px;
+        margin-bottom: 0;
         width: 358px;
     }
 }
