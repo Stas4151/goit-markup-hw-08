@@ -17,14 +17,19 @@ header {
 }
 
 .navigation {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+
     @media screen and (min-width: 786px) {
         display: flex;
         align-items: center;
         margin-right: 96px;
         padding-top: 28px;
-    @media screen and (min-width: 786px) {
-        padding-top: 0;
-    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+        }
     }
 }
 
